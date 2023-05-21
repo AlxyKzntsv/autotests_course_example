@@ -22,21 +22,21 @@ def to_roman_one_char(number, digit):
         case 1:
             return roman_digits[digit][0]
         case 2:
-            return roman_digits[digit][0]+roman_digits[digit][0]
+            return roman_digits[digit][0] + roman_digits[digit][0]
         case 3:
-            return roman_digits[digit][0]+roman_digits[digit][0]+roman_digits[digit][0]
+            return roman_digits[digit][0] + roman_digits[digit][0] + roman_digits[digit][0]
         case 4:
-            return roman_digits[digit][0]+roman_digits[digit][1]
+            return roman_digits[digit][0] + roman_digits[digit][1]
         case 5:
             return roman_digits[digit][1]
         case 6:
-            return roman_digits[digit][1]+roman_digits[digit][0]
+            return roman_digits[digit][1] + roman_digits[digit][0]
         case 7:
-            return roman_digits[digit][1]+roman_digits[digit][0]+roman_digits[digit][0]
+            return roman_digits[digit][1] + roman_digits[digit][0] + roman_digits[digit][0]
         case 8:
-            return roman_digits[digit][1]+roman_digits[digit][0]+roman_digits[digit][0]+roman_digits[digit][0]
+            return roman_digits[digit][1] + roman_digits[digit][0] + roman_digits[digit][0] + roman_digits[digit][0]
         case 9:
-            return roman_digits[digit][0]+roman_digits[digit][2]
+            return roman_digits[digit][0] + roman_digits[digit][2]
         case _:
             return ''
 

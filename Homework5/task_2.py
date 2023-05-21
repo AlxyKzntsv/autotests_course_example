@@ -7,10 +7,16 @@
 
 
 def repeats(our_str):
+    """
+    функция принимает на вход строку our_str и возвращает новую строку вида: 'letter' --> l_1e_1t_1t_2e_2_r_1
+    :param our_str: строка
+    :return new_str: строка, в которой к символам добавляется, сколько раз каждый символ уже встречался,
+    с помощью постфикса формата _n
+    """
     new_str = ""
     letters_dict = {}
     for i in our_str:
-        if letters_dict.get(i) is not None:
+        if letters_dict.get(i):
             letters_dict[i] += 1
         else:
             letters_dict[i] = 1

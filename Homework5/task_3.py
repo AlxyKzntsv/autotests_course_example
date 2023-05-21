@@ -19,10 +19,15 @@
 
 
 def everything_for_your_cat(cats_data):
+    """
+    Функция оптимизирует хранение данных в зоомагазине
+    :param cats_data: Данные о кошках и их владельцах, записанные списком кортежей
+    :return our_str: Оптимизированные данные
+    """
     dict_cats = {}  # создаем словарь вида "Имя Фамилия":[[Кличка1, возраст1], [Кличка2, возраст2], ...]
     our_str = ''
     for i in cats_data:
-        if dict_cats.get(i[2] + ' ' + i[3]) is not None:
+        if dict_cats.get(i[2] + ' ' + i[3]):
             dict_cats[i[2] + ' ' + i[3]].append(i[0] + ', ' + str(i[1]))
         else:
             dict_cats[i[2] + ' ' + i[3]] = [i[0] + ', ' + str(i[1])]

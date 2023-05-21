@@ -7,12 +7,13 @@
 
 
 def letter_stat(our_str):
-    letters_dict = {}
-    for i in our_str:
-        if letters_dict.get(i) is not None:
-            letters_dict[i] += 1
-        else:
-            letters_dict[i] = 1
+    """
+    функция на вход принимает строку our_str и возращает словарь letters_dict
+    :param our_str: строка
+    :return letters_dict: словарь, где в качестве ключей буквы строки, а значениями являются числа,
+    соответствующие количеству вхождений данной буквы в строку
+    """
+    letters_dict = {item: our_str.count(item) for item in our_str}
     return letters_dict
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
